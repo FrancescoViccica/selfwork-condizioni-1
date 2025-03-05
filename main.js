@@ -17,33 +17,45 @@ if( v < 18){
     
 }else if (v == 30) {
     console.log(`eccelente`);
-    
 }
+    //  else{
+//     console.log(`voto non valido`);
+    
+// }
 
-let voto = 29
+let voto = 26;
 
 switch (true) {
     case voto >= 0 && voto < 18:
-        console.log(`Insufficiente`);
+        // console.log(`Insufficiente`);
+        voto = `insufficiente`
         break;
 
     case voto >= 18 && voto < 21: 
-         console.log(`sufficiente`);
+        //  console.log(`sufficiente`);
+        voto = `sufficiente`
          break;
     case voto >= 21 && voto < 24:
-        console.log(`buono`);
+        // console.log(`buono`);
+        voto = `buono`
         break;
     case voto >= 24 && voto < 27:
-        console.log(`distinto`);
+        // console.log(`distinto`);
+        voto = `distinto`
         break;
     case voto >= 27 && voto <= 29:
-        console.log(`ottimo`);
+        // console.log(`ottimo`);
+        voto = `ottimo`
         break;
     case voto == 30:
-        console.log(`eccellente`);
+        // console.log(`eccellente`);
+        voto = `eccellente`
         break;    
             
     default:
-    console.log(`Non classificato`);
+    // console.log(`Non classificato`);
+    voto = `voto non valido`
         break;
 }
+
+console.log(voto);
